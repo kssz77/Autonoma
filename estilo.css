@@ -1,18 +1,56 @@
+h1 {
+    color: rgb(42, 42, 99);
+    text-decoration: overline;
+    text-align: center;
+}
 
-body{background-color: rgb(125, 125, 221); }
-header{background-color: rgb(162, 0, 255);}
-nav{background-color: rgb(180, 232, 236);}
-section{background-color: rgb(255, 0, 242);}
-article{background-color: rgb(218, 230, 84);}
-aside{background-color: rgb(111, 230, 202);}
-footer{background-color: rgb(156, 140, 214);}
+h2 {
+    color: rgb(26, 26, 60);
+}
 
-.contenedor{
+p {
+    color: rgb(20, 20, 47);
+}
+
+a {
+    color: rgb(20, 20, 47);
+}
+
+body {
+    background-color: rgb(234, 239, 199);
+}
+
+header {
+    background-color: rgb(175, 170, 106);
+}
+
+nav {
+    background-color: rgb(46, 149, 240);
+}
+
+section {
+    background-color: rgb(134, 171, 230);
+}
+
+article {
+    background-color: rgb(60, 167, 151);
+}
+
+aside {
+    background-color: rgb(96, 160, 245);
+} 
+
+footer {
+    background-color: rgb(218, 230, 84);
+}
+
+.contenedor {
     display: grid;
-    grid-template-rows: auto auto 300bx 1fr 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
-.contenido{
+
+.contenido {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
