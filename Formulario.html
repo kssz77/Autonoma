@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Formulario</title>
 </head>
-<body>
-    <form name="datos">
-        <input type="number">Number<br>
-        <input type="email" placeholder="Ingrese su correo">Email<br>
-        <input type="text"placeholder= "Ingrese su nombre">Nombre<br>
-        <input type="text" placeholder="Ingrese su apellido">Apellido<br>
-        <input type="date">Fecha de nacimiento<br>
-        <input type="URL">Pagina web<br>
-        <label>estándares que conoces?</label><br>
-        <input type="checkbox"Values="HTML 5" checked> HTML5<br> 
-        <input type="checkbox"Values="CSS 3"> CSS3<br>
-        <input type="checkbox"Values="JavaScript"> JavaScript<br>
-        <textarea Cols="15" rows="6" placeholder="Ingrese su frase celebre favorita"></textarea><br>
-        <input type="button" style="background-color:red"value="send the info"> 
-    </form>
+
+<body class="contenedor">
+    <header>
+        <h1>Formulario de datos</h1>
+    </header>
+
+    <main>
+        <form name="datos">
+            <label for="numero"> Seleccione un número: </label><br>
+            <input type="number" id="numero"><br>
+            <label for="correo"> Ingrese su correo: </label><br>
+            <input type="email" id="correo" placeholder="example@email.com"><br>
+            <label for="nombre"> Ingrese su nombre: </label><br>
+            <input type="text" id="nombre" placeholder="Ejemplo: Juan"><br>
+            <label for="apellido"> Ingrese su apellido: </label><br>
+            <input type="text" id="apellido" placeholder="Ejemplo: Pérez"><br>
+            <label for="fecha_nacimiento"> Ingrese su fecha de nacimiento: </label><br>
+            <input type="date" id="fecha_nacimiento"><br>
+            <label for="pagina_web"> Ingrese su página web: </label><br>
+            <input type="URL" id="pagina_web" placeholder="https://example.com"><br>
+            <fieldset>
+                <legend>¿Qué estándares conoces?</legend>
+                <input type="checkbox" id="html5" checked>
+                <label for="html5">HTML 5</label><br>
+                <input type="checkbox" id="css3">
+                <label for="css3">CSS3</label><br>
+                <input type="checkbox" id="javascript">
+                <label for="javascript">JavaScript</label><br>
+            </fieldset>
+            <label for="frase">Ingrese su frase celebre favorita: </label><br>
+            <textarea Cols="20" rows="6" id="frase" placeholder="Ejemplo: Pienso, luego existo."></textarea><br>
+            <input type="button" value="send the info">
+        </form>
+    </main>
+
 </body>
+
 </html>
