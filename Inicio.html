@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 1 html</title> 
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <style type="text/css">
-        h1{color: rgb(255, 255, 255); font-size: xx-large; text-decoration: overline; text-align: center;}
-        p{color: rgb(49, 23, 73); border: 0ex; }
-        h2{color: rgb(25, 129, 49); background-color: darkcyans; }
-    </style>
-    <script type="text/javascript">
-        alert("mensaje de prueba");
-    </script>
-    <script type="text/javascript" src="js/codigo.js"></script>
+    <link rel="stylesheet"  href="estilo.css">
+   
 </head>
 
 <body class="contenedor">
@@ -33,7 +25,7 @@
             <li><a href="Leccion.html">Lección</a></li>
         </ul>
     </nav>
-    <div class="contenido">
+    <main class="contenido">
     <section>
         <h2>Enlace</h2>
         <P>
@@ -41,7 +33,7 @@
             <a href="https://www.utm.edu.ec/" target="_blank" title="Enlace UTM"> enlace</a>
             a la UTM
         </P>
-        <p onclick="alert('un mensaje de prueba')">Una parrafo de texto.</p>
+        <p id = "mensaje-de-prueba">Un parrafo de texto.</p>
         
         <a href="mailto:dgonzalez9296@utm.edu.ec" target="_blank">Direccionar a correo</a>
     </section>
@@ -56,10 +48,11 @@
     </article>
 
     <aside> <img src="arbol.jpg" alt="arbol" width="500" height="400"> <br> </aside>
-    </div>
+</main>
     <footer> <a href="https://www.utm.edu.ec/">Ingreso a enlace utm</a><br></footer>
 
-    <script type="text/javascript" src="codigo.js"></script>
+     
+    <script  src="codigo.js"></script>
 </body>
 
 </html>
