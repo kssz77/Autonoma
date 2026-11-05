@@ -17,17 +17,17 @@
     <main>
         <form name="datos">
             <label for="numero"> Seleccione un número: </label><br>
-            <input type="number" id="numero"><br>
+            <input type="number" id="numero" required><br>
             <label for="correo"> Ingrese su correo: </label><br>
-            <input type="email" id="correo" placeholder="example@email.com"><br>
+            <input type="email" id="correo" placeholder="example@email.com" required><br>
             <label for="nombre"> Ingrese su nombre: </label><br>
-            <input type="text" id="nombre" placeholder="Ejemplo: Juan"><br>
+            <input type="text" id="nombre" placeholder="Ejemplo: Juan" required><br>
             <label for="apellido"> Ingrese su apellido: </label><br>
-            <input type="text" id="apellido" placeholder="Ejemplo: Pérez"><br>
+            <input type="text" id="apellido" placeholder="Ejemplo: Pérez" required><br>
             <label for="fecha_nacimiento"> Ingrese su fecha de nacimiento: </label><br>
-            <input type="date" id="fecha_nacimiento"><br>
+            <input type="date" id="fecha_nacimiento" required><br>
             <label for="pagina_web"> Ingrese su página web: </label><br>
-            <input type="URL" id="pagina_web" placeholder="https://example.com"><br>
+            <input type="URL" id="pagina_web" placeholder="https://example.com" required><br>
             <fieldset>
                 <legend>¿Qué estándares conoces?</legend>
                 <input type="checkbox" id="html5" checked>
@@ -39,7 +39,7 @@
             </fieldset>
             <label for="frase">Ingrese su frase celebre favorita: </label><br>
             <textarea Cols="20" rows="6" id="frase" placeholder="Ejemplo: Pienso, luego existo."></textarea><br>
-            <input type="button" value="send the info">
+            <button type="submit">Enviar datos </button>
         </form>
     </main>
 
