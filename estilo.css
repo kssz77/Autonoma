@@ -1,25 +1,39 @@
+html{
+    font-size: 16px;
+}
 h1 {
     color: rgb(42, 42, 99);
     text-decoration: overline;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 h2 {
     color: rgb(26, 26, 60);
+    font-size: 2rem;
 }
 
 p {
     color: rgb(20, 20, 47);
+    font-size: 1rem;
 }
 
 a {
     color: rgb(20, 20, 47);
     display: inline-block;
-    padding: 4px 8px;
+    padding: 5px 8px;
+    font-size: 1rem;
 }
 
 input {
-    padding: 4px 8px;
+    padding: 5px 8px;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 body {
@@ -48,7 +62,7 @@ article {
 
 aside {
     background-color: rgb(96, 160, 245);
-} 
+}
 
 footer {
     background-color: rgb(218, 230, 84);
@@ -63,4 +77,23 @@ footer {
 .contenido {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgb(0, 0, 0);
+    outline-offset: 2px;
 }
