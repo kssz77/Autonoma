@@ -36,6 +36,11 @@ img {
     height: auto;
 }
 
+button {
+    padding: 5px 8px;
+    font-size: 1rem;
+}
+
 body {
     background-color: rgb(234, 239, 199);
 }
@@ -93,7 +98,8 @@ footer {
 
 a:focus-visible,
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible 
+button:focus-visible {
     outline: 3px solid rgb(0, 0, 0);
     outline-offset: 2px;
 }

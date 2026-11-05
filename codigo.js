@@ -1,6 +1,8 @@
 /*Daniela Gonzales Ayala
   Kevin Santiago Santacruz Zambrano*/
 //Aprendiendo a programar con Java Script
+alert("Mnesaje de prueba")
+
 var mensaje = "Bienvenidos a nuestro sitio web"; var nombre = 'producto'
 
 function multiplicar(p1, p2) {
@@ -8,9 +10,7 @@ function multiplicar(p1, p2) {
 }
 document.getElementById("demo").innerHTML=multiplicar(4,3)
 
-const parrafoMensaje = document.getElementById('mensaje-de-prueba')
-if(parrafoMensaje) {
-   parrafoMensaje.addEventListener('click', function(){
-   alert('Un mensaje de prueba');
- } );
-}
+const botonMensaje = document.getElementById('mensaje-de-prueba');
+botonMensaje.addEventListener("click", function() {
+    alert("Mensaje de prueba");
+});
